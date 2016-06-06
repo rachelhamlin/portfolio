@@ -1,9 +1,88 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(253,245,230);
+  font-family: "source-serif-pro", sans-serif;
+  font-weight: lighter;
 }
 
-h1 {
-  font-family: "estilo-regular",sans-serif;
+a {
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.info {
+  position: absolute;
+  left: 10%;
+}
+.info h1 {
+  font-family: "fira-sans-2", sans-serif;
+  font-weight: lighter;
+  font-size: 4rem;
+  margin-bottom: -10px;
+  padding-top: 20px;
+  line-height: 3rem;
+}
+.info p {
+  padding-left: 1%;
+}
+
+.project {
+  top: 35%;
+  max-width: 320px;
+  font-family: 'helvetica', sans-serif;
+  font-size: .8rem;
+}
+
+#one {
+  position: absolute;
+  left: 10%;
+}
+#two {
+  position: absolute;
+  left: 40%;
+}
+  #two img {
+    width: 320px;
+    height: 168px;
+  }
+#three {
+  position: absolute;
+  left: 70%;
+}
+  #three img {
+    width: 320px;
+    height: 168px;
+  }
+
+.overlay {
+  width: 320px;
+  height: 168px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background: rgba(0,0,0,0);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.project.hover .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.contact #line {
+  background-color: rgb(0,0,0);
+  width: 50%;
+  height: 1px;
+  position: absolute;
+  right: 0%;
+  bottom: 10%;
+}
+.contact p {
+  position: absolute;
+  right: 2%;
+  bottom: 9%;
 }
